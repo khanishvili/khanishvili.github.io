@@ -280,6 +280,7 @@ footer {
   width: 40%;
    
   text-align: center;
+  align-items: center;
   margin: 95vh 50vw 0.1vh 50vw;
    
 }
