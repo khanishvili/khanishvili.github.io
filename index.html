@@ -1,18 +1,19 @@
 <!doctype html>
 <html lang="en-US">
-   <head>       
+   <head>
       <title>Daviti's Portfolio</title>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link type="text/css" media="all" href="style.css" rel="stylesheet" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <link type="text/css" media="all" href="style.css" rel="stylesheet" /> 
-    
+     
    </head>
-   <body>     
-         <div id="nav_bar">
+   <body>
+      <div id="nav_bar">
             <nav>
-               <a href=""><div class="fa fa-home" ></div></a> 
-               <a href="" class=""><div class="fa fa-male" aria-hidden="true"></div></a> 
-               <a href="" class=""><div class="fa fa-cog" aria-hidden="true"></div></a> 
+               <a href="#main"><div class="fa fa-home" ></div></a> 
+               <a href="#about" class=""><div class="fa fa-male" aria-hidden="true"></div></a> 
+               <a href="#projects" class=""><div class="fa fa-cog" aria-hidden="true"></div></a> 
               </nav>
                 <ul class="contact">
                   <li><a href="https://github.com/khanishvili" ><i class="fa fa-github"></i></a></li>
@@ -20,5 +21,61 @@
                   <li><a href="javascript: void(0)" onclick="location.href='mailto:khanishvili@live.com';"><i class="fa fa-envelope"></i></a></li>
                </ul>
             </div>
+            <main id="main" >
+               <div class="intro">
+                  <div class="fullname">
+                     Hi I'm Daviti....
+                  </div>
+                  <div class="_intro">
+                     Jr software Software Developer
+                  </div> 
+               </div>
+               <div class="line"></div>
+            </main>
+            <section class="about" id="about" >
+            <div class="abouttext">    Passionate about developing products that
+                     provide real-world solutions . Understanding the challenges,
+                     combined with practical implementations of product concepts and
+                      technologies, is key to successfully designing and implementing
+                       product to meet customer needs!</div>
+               </div>
+               <div class="education">
+                  <ul class="cards">
+                     <li class="card-item double">
+                         <a href="#">
+                             <figure class="card">
+                                 <img src="Pictures/wc.png" alt="Georgian Technical University">
+                                 <figcaption class="caption">
+                                     <h3 class="caption-title">WCCI</h3>
+                              <p>Engaged in a full-time, 5-star-rated coding boot camp, learning agile full-stack software development from expert instructors and intensive hands-on projects. Planned, designed, and developed professionally programmed applications in collaborative team-based and independent settings, demonstrating the proficiency to earn their Software Development Certificate.</p>
+                                 </figcaption>
+                             </figure>
+                         </a>
+                     </li>
+                     <li class="card-item ">
+                         <a href="#">
+                             <figure class="card">
+                                 <img src="Pictures/gt.png" alt="GTU">
+                                 <figcaption class="caption">
+                                     <h3 class="caption-title">Georgian Technical University</h3>
+                              <p>Graduated in 2013 . Have Bachelors degree in Software engineering</p>
+                                 </figcaption>
+                             </figure>
+                         </a>
+                     </li>
+                     <li class="card-item " >
+                         <a href="#">
+                             <figure class="card">
+                           <img src="Pictures/st.png" alt="Stark State College">
+                           <figcaption class="caption">
+                             <h3 class="caption-title">Stark State College</h3>
+                              <p>Commercial Driving Academy , Gas and Oilfield Engineering</p>
+                                 </figcaption>
+                             </figure>
+                         </a>
+                     </li>
+                      </ul>
+               </div>
+              </section>
          </body>
 </html>
