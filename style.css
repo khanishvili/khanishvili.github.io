@@ -2,6 +2,12 @@
 	 color:#f6f1ed;
 	 --secondary: #686663;
 	--primary: #252627;
+	font-family: 'Sniglet', cursive;
+ 	font-family: 'Cabin', sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Quicksand', sans-serif;
+		
  }
  .fa {
 	display: inline-block;
@@ -9,7 +15,7 @@
 	font-size: inherit;
     text-rendering: auto;
     font-weight: 100;
-     }
+    }
 .fa-cog:before {
 	content: "\f040";
 }
@@ -46,6 +52,7 @@ body {
 	height: 10vh;
 	position: relative;
 	text-decoration: none;
+	font-family: 'Quicksand';
 }
 #nav_bar nav a div {
  
@@ -56,15 +63,16 @@ body {
 }
 #nav_bar nav a.active,#nav_bar nav a:hover {
 	color: #AD655F;
-}
+} 
+
 #nav_bar nav a:first-child:after {
-	 
-	content: 'HOME';
+ 	content: 'HOME';
 }
 #nav_bar nav a:first-child+a:after {
+ 
 	content: 'ABOUT';
 }
-#nav_bar nav a:first-child+a+a:after {
+#nav_bar nav a:first-child+a+a:after {	 
 	content: 'PROJECTS';
 }
 #nav_bar nav a:after {
@@ -100,7 +108,7 @@ body {
 #nav_bar ul li a {
 	padding: 7px 0;
 	display: block;
-	font-size: 15px;
+	font-size: 3vw;
 	line-height: 16px;
 	color: #4d4d4e;
 }
@@ -108,16 +116,14 @@ body {
 #nav_bar ul li a:hover {
 	color: #AD655F;
 }
-.intro{
+.intro{	
 	display: grid;
-	grid-column: 1fr 2fr 1fr;
+	grid-column: 1fr 2fr;
 	grid-auto-rows: auto auto auto;
 	border: 3px rosybrown solid;
 	width: 60vw;
-	margin: 50vh 20vw;
-}
-.fullname{
- 
+	margin: 50vh 20vw;}
+.fullname{ 
 	font-size: 3vw;
 	border: 1px rosybrown solid;
 	grid-column: 1/ span 4;
@@ -127,14 +133,14 @@ body {
 	background:red;
 	margin-top: 100vh;
 }
- .about{
+ .about{	
 	display: flex;
-	flex-direction: column;	 
+	flex-direction: column;
 	margin: 15vh 15vw;
 	width: 70vw;
 }
 .abouttext{
-	background:var(--secondary);
+     background:var(--secondary);
 	 font-size: 2vw;
 	 padding: 2vh;
 	 text-align: left;
@@ -149,9 +155,6 @@ body {
 blockquote {
 	margin: 0 1.5em;
 }
-
-
-
 img {
 	display: block;
 	border: 0;
@@ -198,6 +201,8 @@ img {
 		.cards {
 			margin: 0 auto;
 			padding: 1em;
+			margin: 1vh auto;
+		    
 		}
 
 		.card {
@@ -205,6 +210,7 @@ img {
 			padding: .5em;
 			display: grid;
 			grid-template-columns: 8em auto;
+		     
 		}
 
 		.cards a:focus,
@@ -212,6 +218,7 @@ img {
 			outline: 4px solid hsl(0, 0%, 80%);
 		}
 	}
+
 
 	@media screen and (min-width: 60em) {
 
@@ -239,3 +246,55 @@ img {
 
 }
 
+#ProjectsPage {
+	
+	margin: 60vh auto;
+	overflow: hidden;
+	position: relative;
+	background: #000;
+  }
+  #ProjectsPage, #slides img {	 
+	max-width: 50vw;
+	height: 50vh;
+  }
+  #projects img {
+	object-fit: cover;
+	transition: all 5s;
+	visibility: visible;
+	opacity: 1;
+  }
+  #ProjectsPage img.temp {
+	visibility: hidden;
+	opacity: 0.0002222221;
+  }
+  #left, #right {
+	position: absolute;
+  }
+  #left, #right {
+	font-size: 3em;
+	font-weight: bold;	 
+	color: red;
+	background: #333;
+	padding: 0.3vw;
+	top: 45%;	 
+	transition: opacity 0.1s;
+	opacity: 0.8;
+  }
+ 
+  #ProjectsPage{
+	  margin: 40vh;
+	  margin-bottom: 40vh;
+  }
+  #left:hover, #right:hover {
+	cursor: pointer;
+	opacity: 1;
+  }
+  #left { left: 0; }
+  #right { right: 0; }
+ #project{
+	 margin-top: 10vh;
+ }
+  .ProjectHeader{
+	 padding: 10vh;
+	  font-size: 5vw;
+  }
