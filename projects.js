@@ -16,11 +16,11 @@ var slider = (function (config) {
     _items = {}, 
     _sliderIndicators = {}, 
     _config = {
-      selector: '', // селектор слайдера
-      isCycling: true, // автоматическая смена слайдов
-      direction: 'next', // направление смены слайдов
-      interval: 5000, // интервал между автоматической сменой слайдов
-      pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+      selector: '',
+      isCycling: true, 
+      direction: 'next', 
+      interval: 5000, 
+      pause: true 
     };
   var  _getItemIndex = function (_currentItem) {
       var result;
