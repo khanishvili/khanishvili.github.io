@@ -84,17 +84,67 @@
                       </ul>
                </div>
               </section>
-              <section id="project">               
-               <div id="ProjectsPage">               
-                  <div id="projects">
-                  <img src="Pictures/Project1.jpg" data-caption="ENTITY FRAMEWORK C# AND css"> </a>
-                    <img src="Pictures/Project2.jpg" data-caption="C#  " />
-                    <img src="Pictures/Project3.jpg" data-caption="Javascript HTML and CSS"/>
-                  </div> 
-                   <div id="left">Prev</div>
-                  <div id="right">Next</div>                 
+              <section id="project" class="gallerycontainer">               
+               <div id="projects" >
+                  <ol class="slider__indicators">
+                    <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+                    <li class="slider__indicator" data-slide-to="1"></li>
+                    <li class="slider__indicator" data-slide-to="2"></li>
+                  </ol>
+                  <div class="slider__items">
+                    <div class="slider__item slider__item_1 slider__item_active">
+                      <span class="slider__item_inner">
+                        <span class="slider__item_img">
+                          <img class="slider__item_photo" src="/Pictures/Project1.jpg" alt="">
+                        </span>
+                        <span class="slider__item_testimonial">
+                          <span class="slider__item_name">Review Site </span>
+                          <span class="slider__item_post">ASP.NET CORE , ENTITY FRAMEWORK CORE , HTML , CSS AND JAVASCRIPT!</A></span>
+                          <span class="slider__item_text">Massive Open Online Courses Assessment (MOOCA) is an open-source review website for massive open online courses. The site allows users to create, edit, and delete reviews of each course. Each course can be filtered by category. The users can use it to determine which course they would like to attempt base on its current rating.</span>
+                          <span class="slider__item_action">
+                            <a class="btn" href="https://github.com/alexanderjalbright/ReviewSite">Link</a>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="slider__item slider__item_2">
+                      <span class="slider__item_inner">
+                        <span class="slider__item_img">
+                          <img class="slider__item_photo" src="/Pictures/project2.jpg" alt="">
+                        </span>
+                        <span class="slider__item_testimonial">
+                          <span class="slider__item_name">Pet Shelter</span>
+                          <span class="slider__item_post">C# programming language using inheritence and collections List </span>
+                          <span class="slider__item_text">
+                              An application that takes users through an interactive pet care experience by applying user input (feed, play, take to the vet, etc) to determime overall pet status. </span>
+                          <span class="slider__item_action">
+                            <a class="btn" href="https://github.com/Bpjd21/Pets_Amok">Libk</a>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="slider__item slider__item_3">
+                      <span class="slider__item_inner">
+                        <span class="slider__item_img">
+                          <img class="slider__item_photo" src="/Pictures/Project3.jpg" alt="">
+                        </span>
+                        <span class="slider__item_testimonial">
+                          <span class="slider__item_name">My PORTFOLIO</span>
+                          <span class="slider__item_post">HTML5  CSS3 and JS </span>
+                          <span class="slider__item_text">My Personal Portfolio </span>
+                          <span class="slider__item_action">
+                            <a class="btn" href="https://github.com/khanishvili/khanishvili.github.io">Link.</a>
+                          </span>
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                  <a class="slider__control slider__control_next" href="#" role="button"></a>
                 </div>
+
               </section>
-              <script src="main.js"></script>
+              <script src="projects.js">   
+            </script>
          </body>
 </html>
