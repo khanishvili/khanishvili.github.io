@@ -104,7 +104,6 @@ body {
 	text-align: center;
 	margin: 0;
 }
-
 #nav_bar ul li a {
 	padding: 7px 0;
 	display: block;
@@ -112,28 +111,32 @@ body {
 	line-height: 16px;
 	color: #4d4d4e;
 }
-
 #nav_bar ul li a:hover {
 	color: #AD655F;
 }
 .intro{	
 	display: grid;
-	grid-column: 1fr 2fr;
-	grid-auto-rows: auto auto auto;
-	border: 3px rosybrown solid;
-	width: 60vw;
-	margin: 50vh 20vw;}
-.fullname{ 
+	grid-column: auto;	
+	grid-auto-rows: 1fr 3fr;
+ 	width: 60vw;
+	margin: 20vh 20vw;
+	grid-gap: 3vw;
+ }
+.fullname{
 	font-size: 3vw;
-	border: 1px rosybrown solid;
-	grid-column: 1/ span 4;
+	text-align: center;
+}
+.topline{
+	top:2vh;
+	width: 80vw;
+	margin: 0 10vw;
+	border: 1vw solid #686663;
 }
 .line{
-	height: 2px;
-	background:red;
-	margin-top: 100vh;
+height: 2px;
+ margin-top: 100vh;
 }
- .about{	
+ .about{
 	display: flex;
 	flex-direction: column;
 	margin: 15vh 15vw;
@@ -189,11 +192,7 @@ img {
 .caption p {
 	margin-top: .5em;
 	margin-bottom: 0;
-}
-
-
-
- 
+} 
 @supports (grid-area: auto) {
 
 	@media screen and (min-width: 27em) {
